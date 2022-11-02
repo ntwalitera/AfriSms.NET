@@ -1,6 +1,7 @@
 # AfriSms .NET
 
-[![NuGet version (AfriSms)](https://img.shields.io/nuget/v/AfriSms.svg?style=flat-square)](https://www.nuget.org/packages/AfriSms)
+[![NuGet](https://img.shields.io/nuget/v/AfriSms.svg)](https://www.nuget.org/packages/AfriSms/) 
+[![NuGet](https://img.shields.io/nuget/dt/AfriSms.svg)](https://www.nuget.org/packages/AfriSms/)
 
 ### Installation
 
