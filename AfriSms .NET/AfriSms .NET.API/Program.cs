@@ -21,8 +21,20 @@ var app = builder.Build();
 app.UseSwagger();
 app.UseSwaggerUI();
 app.MapGet("/Welcome", () => "Welcome to Afri Sms developed by Afrinnovat Ltd!");
-app.MapPost("/SendSms", () =>
+app.MapPost("/SendSms", async () =>
 {
-
+    List<string> Phones = new List<string> { "078*******", "079*******", "073*******" };
+    AfriSms.AfriSms  sms= new AfriSms.AfriSms();
+    var dd = await sms.SendSms(SmsSetting.Email, SmsSetting.Password, SmsSetting.CompanySenderId, SmsSetting.UserId, SmsSetting.Message, Phones);
 });
 app.Run();
+
+
+public class SmsSetting
+{
+    public const string Email = "Your email";
+    public const string Password = "Your password";
+    public const string CompanySenderId = "Your company sender id";
+    public const string UserId = "Your user id";
+    public const string Message = "hey !!!";
+}
