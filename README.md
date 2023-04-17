@@ -24,7 +24,8 @@ namespace AfriSmsApp
         static void Main(string[] args)
         {
             List<string> Phones = new List<string>{ "078xxxxxxx", "079xxxxxxx", "072xxxxxxx" };
-            AfriSms.Core.AfriSms.SendSms(SmsSetting.Email, SmsSetting.Password, SmsSetting.CompanySenderId, SmsSetting.UserId, SmsSetting.Message, Phones);
+            AfriSms.AfriSms sms = new AfriSms.AfriSms();
+            var result = await sms.SendSms(SmsSetting.Email, SmsSetting.Password, SmsSetting.CompanySenderId, SmsSetting.UserId, SmsSetting.Message, Phones);
         }
     }
 }
