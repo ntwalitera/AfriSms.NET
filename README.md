@@ -45,3 +45,13 @@ That's it!
 # License
 
 MIT
+
+
+# Bugs and Feedback
+
+For bugs, questions and discussions please use the [GitHub Issues](https://github.com/ntwalitera/AfriSms.NET/issues).
+
+# Links
+
+- NuGet Package: [https://www.nuget.org/packages/AfriSms](https://www.nuget.org/packages/AfriSms/)
+- GitHub Repo: [ntwalitera/AfriSms.NET](https://github.com/ntwalitera/AfriSms.NET)
